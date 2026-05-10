@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Golden Retriever",
+    "price": 899.99,
+    "description": "Friendly and loyal family companion with a playful personality.",
+    "image": "https://images.unsplash.com/photo-1633722715463-d30f4f325e24?auto=format&fit=crop&w=900&q=80",
+    "category": "Dogs"
+  },
+  {
+    "id": 2,
+    "name": "Persian Cat",
+    "price": 649.99,
+    "description": "Gentle long-haired cat known for calm nature and adorable looks.",
+    "image": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=900&q=80",
+    "category": "Cats"
+  },
+  {
+    "id": 3,
+    "name": "Parrot",
+    "price": 299.99,
+    "description": "Colorful, intelligent bird that loves interaction and mimicry.",
+    "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?auto=format&fit=crop&w=900&q=80",
+    "category": "Birds"
+  },
+  {
+    "id": 4,
+    "name": "Goldfish",
+    "price": 39.99,
+    "description": "Classic beginner-friendly fish perfect for home aquariums.",
+    "image": "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=900&q=80",
+    "category": "Fish"
+  },
+  {
+    "id": 5,
+    "name": "Siberian Husky",
+    "price": 799.99,
+    "description": "Energetic and social breed with striking blue eyes.",
+    "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80",
+    "category": "Dogs"
+  },
+  {
+    "id": 6,
+    "name": "Maine Coon",
+    "price": 749.99,
+    "description": "Large affectionate cat with a fluffy coat and charming temperament.",
+    "image": "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?auto=format&fit=crop&w=900&q=80",
+    "category": "Cats"
+  },
+  {
+    "id": 7,
+    "name": "Cockatiel",
+    "price": 189.99,
+    "description": "Cheerful pet bird with a distinctive crest and sweet whistles.",
+    "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=900&q=80",
+    "category": "Birds"
+  },
+  {
+    "id": 8,
+    "name": "Betta Fish",
+    "price": 24.99,
+    "description": "Vibrant ornamental fish ideal for compact decorative tanks.",
+    "image": "https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&w=900&q=80",
+    "category": "Fish"
+  }
+]

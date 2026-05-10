@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f7f8;
+  --surface: #ffffff;
+  --foreground: #243b61;
+  --muted: #60779b;
+  --primary: #f58a5f;
+  --secondary: #9dd7ba;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --shadow-soft: 0 8px 24px rgba(24, 39, 75, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-poppins);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins), sans-serif;
+  color: var(--foreground);
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+small {
+  font-size: 12px;
+}
+
+.btn-primary {
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  border-radius: 999px;
+  border: 1px solid #cfd8e3;
+  background: #fff;
+  color: var(--foreground);
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.card-soft {
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid #e3eaf3;
+}
