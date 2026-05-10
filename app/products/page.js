@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
@@ -23,7 +23,8 @@ function priceMatch(price, range) {
   return price > 1000;
 }
 
-export default function ProductsPage() {
+
+function ProductsPageInner() {
   const searchParams = useSearchParams();
   const preCategory = searchParams.get("category") || "All";
   const [products, setProducts] = useState([]);
@@ -155,5 +156,13 @@ export default function ProductsPage() {
       <Footer />
       {selectedProduct && <OrderForm product={selectedProduct} onClose={() => setSelectedProduct(null)} />}
     </main>
+  );
+}
+
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProductsPageInner />
+    </Suspense>
   );
 }
